@@ -1,0 +1,65 @@
+html, body {
+    text-align: center;
+    font-family: 'Calibri', sans-serif; 
+}
+
+h1 {
+    font-size: 2em; 
+    font-weight: bold;
+    margin: 20px; 
+}
+
+#survey-form {
+    display: flex; 
+    flex-direction: column; 
+    margin: auto;
+    padding: 8px; 
+    width: 60%;
+    max-width: 800px;
+    border: 1px solid black;
+    border-radius: 4px; 
+}
+
+.row {
+    margin: 8px 2px; 
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+    vertical-align: top; 
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.input-field {
+    border: 1px solid black; 
+    border-radius: 2px;
+    width: 80%;
+    height: 20px;  
+}
+
+.radio, .checkbox {
+    display: block; 
+}
+
+input[type="checkbox"], input[type="radio"] {
+    float: left;
+}
+
+@media screen and (max-width: 520px) {
+    .labels {
+        width: 100%;
+        text-align: left;
+    }
+
+    .rightTab {
+        width: 80%;
+        float: left; 
+    }
+}

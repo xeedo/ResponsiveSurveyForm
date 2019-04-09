@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple survey form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="script.js"></script> 
+</head>
+
+<body>
+    <h1 id="title">Survey form</h1>
+
+    <form id="survey-form">
+
+        <p id="description">Simple survey form for freecodecamp.org practice.</p>
+
+        <div class="row">
+            <div class="labels"><label for="name" id="label-name">Name: </label></div>
+            <div class="rightTab"><input type="text" class="input-field" id="name"></div>
+        </div>
+        
+        <div class="row">
+            <div class="labels"><label for="email" id="label-email">Email: </label></div>
+            <div class="rightTab"><input type="email" class="input-field" id="email"></div>
+        </div>
+        
+        <div class="row">
+            <div class="labels"><label for="age" id="label-age">Age: </label></div>
+            <div class="rightTab"><input type="number" class="input-field" id="age" min="0" max="120"></div>
+        </div>
+        
+        <div class="row">
+            <div class="labels"><label for="options">Select options: </label></div>
+            <div class="rightTab">
+                <select name="options" id="dropdown">
+                    <option value="option 1">Option 1</option>
+                    <option value="option 2">Option 2</option>
+                    <option value="option 3">Option 3</option>
+                    <option value="option 4">Option 4</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="labels"><label for="options">Select one of these: </label></div>
+            <div class="rightTab">
+                <ul style="list-style: none;"> 
+                    <li class="radio"><input type="radio" name="options" value="option 1"> Option 1</li>
+                    <li class="radio"><input type="radio" name="options" value="option 2"> Option 2</li>
+                    <li class="radio"><input type="radio" name="options" value="option 3"> Option 3</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="labels"><label for="checkbox">Chose: </label></div>
+            <div class="rightTab">
+                <ul style="list-style: none;">
+                    <li class="checkbox"><input type="checkbox"  name="checkbox" value="one"> One</li>
+                    <li class="checkbox"><input type="checkbox"  name="checkbox" value="two"> Two</li>
+                    <li class="checkbox"><input type="checkbox"  name="checkbox" value="three"> Three</li>
+                </ul>
+            </div>  
+        </div>
+        
+        <div class="row">
+            <div class="labels"><label for="texarea">Enter text here:</label></div>
+            <div class="rightTab"><textarea name="textarea" class="input-field" id="textarea" style="height:100px">Enter text here...</textarea></div>
+        </div>
+        
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
