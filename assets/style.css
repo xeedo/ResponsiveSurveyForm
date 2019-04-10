@@ -96,8 +96,22 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 @media screen and (max-width: 520px) {
-    .labels {
+    #survey-form {
         width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .row {
+        flex-direction: column; 
+    }
+
+    .up {
+        align-items: center;
+    }
+    
+    .labels {
+        width: 80%;
         text-align: left;
     }
 
